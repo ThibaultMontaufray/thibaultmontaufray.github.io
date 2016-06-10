@@ -1,1 +1,86 @@
-Hello world
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Effects - Show Demo</title>
+	<link rel="stylesheet" href="jquery-ui.css">
+	<script src="jquery-1.10.2.js"></script>
+	<script src="jquery-ui.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<style>
+	* {
+        background:#000;
+        color:#aaa;
+        font-family:Calibri;
+        padding:0px;
+        margin:0px;
+        border:0px;
+        border-spacing: 0px;
+    }
+	.toggler { 
+		margin:auto; 
+	}
+	#effect 
+	{ 
+		width: 500px; 
+		padding: 4px; 
+		position: relative; 
+		margin:auto;
+		margin-top:-30px;
+	}
+	#effect p{
+		background:#373737;
+		width:498px;
+		height:24px;
+		margin-top:76px;
+		border:1px solid #F60;
+		padding:10px;
+		color:#FFF;
+		text-align:center;
+	}
+	#effect input:focus{
+		outline: none;
+	}
+	#effect h3 
+	{ 
+		margin: 0; 
+		padding: 2px; 
+		text-align: center; 
+		color:#737373;
+		background:#373737;
+		border:0px;
+		height:24px;
+	}
+	#histo {
+		height:300px;
+		text-align:bottom;
+		color:#F0C;
+	}
+	#input{
+		float:bottom;
+	}
+	</style>
+	<script type="text/javascript">			
+		$(function() {
+			$( "#effect" ).hide();
+		});
+	</script>
+</head>
+<body onload="OnLoad()">
+	<div class="toggler">
+		<div id="effect">
+			<div id="input">
+				<p>Hi, work in progress, Iron another time</p>
+			</div>
+		</div>
+	</div>
+	<script>
+		function OnLoad() {
+			var options = {};
+			<!-- $("#effect").show( "fold", options, 420, null ); -->
+			$("#effect").slideDown();
+		}
+	</script>
+</body>
+</html>
